@@ -60,7 +60,6 @@
           value="0"
         />
       </label>
-    
 
       <label>
         Cube size
@@ -73,20 +72,19 @@
           value="150"
         />
       </label>
-      
+
       <div>
         Backface status:
-        <input 
-          type="radio" 
-          name="backface" 
-          value="visible"
-        >On</input>
-        <input 
-          type="radio" 
-          name="backface" 
-          value="hidden"
-          checked
-        >Off</input>
+        <label class="radio-button">
+          On
+          <input type="radio" name="backface" value="visible" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio-button">
+          Off
+          <input type="radio" name="backface" value="hidden" checked />
+          <span class="checkmark"></span>
+        </label>
       </div>
     </form>
 

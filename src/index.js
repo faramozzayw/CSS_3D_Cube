@@ -1,5 +1,6 @@
 import "./styles.css";
 import "./ranges.css";
+import "./radio.css";
 
 const $ = selector => {
   let elements = document.querySelectorAll(selector);
