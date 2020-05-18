@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+  padding: 10vmax;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  text-align: center;
+  animation: move_cube 2s forwards infinite;
+}
+
+@keyframes move_cube {
+  from {
+    transform: rotateY(0deg) rotatex(-38deg);
+  }
+
+  25% {
+    transform: rotateY(46deg) rotatex(-38deg);
+  }
+
+  50% {
+    transform: rotateY(46deg) rotatex(-75deg);
+  }
+
+  75% {
+    transform: rotateY(46deg) rotatex(75deg);
+  }
+
+  to {
+    transform: rotateY(0deg) rotatex(-38deg);
+  }
+}
+
+.cube .face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(126, 20, 187, 0.438);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.cube .face.front {
+  transform: translateZ(75px);
+  background: #237a57;
+}
+
+.cube .face.back {
+  transform: rotateX(180deg) translateZ(75px);
+  background: #005aa7;
+}
+
+.cube .face.left {
+  transform: rotateY(-90deg) translateZ(75px);
+  background: #da4453;
+}
+
+.cube .face.right {
+  transform: rotateY(90deg) translateZ(75px);
+  background: #a8c0ff;
+}
+
+.cube .face.top {
+  transform: rotateX(90deg) translateZ(75px);
+  background: #fc4a1a;
+}
+
+.cube .face.bottom {
+  transform: rotateX(-90deg) translateZ(75px);
+  background: #f7b733;
+}

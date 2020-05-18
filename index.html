@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <div class="scene">
+      <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <form action="">
+      <label>
+        X axis
+        <input type="range" id="axis_x" name="axis_x" min="0" max="360" />
+      </label>
+
+      <br />
+
+      <label>
+        Y axis
+        <input type="range" id="axis_y" name="axis_y" min="0" max="360" />
+      </label>
+
+      <br />
+
+      <label>
+        Z axis
+        <input type="range" id="axis_z" name="axis_z" min="0" max="360" />
+      </label>
+    </form>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
