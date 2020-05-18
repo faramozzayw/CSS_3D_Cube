@@ -1,4 +1,5 @@
 import "./styles.css";
+import "./ranges.css";
 
 const $ = selector => {
   let elements = document.querySelectorAll(selector);
@@ -10,25 +11,25 @@ const toPx = num => `${num}px`;
 
 const cube = $(".cube")[0];
 
-const axis_x = $("#axis_x")[0];
-const axis_y = $("#axis_y")[0];
-const axis_z = $("#axis_z")[0];
-const axis_arr = [axis_x, axis_y, axis_z];
-
 const updateAxis = target => e => {
   const value = e?.target?.value;
   cube.style.setProperty(`--${target}`, toDeg(value));
 };
-
-axis_arr.forEach(input =>
-  input.addEventListener("input", updateAxis(input.name))
-);
-
-const cube_size = $("#cube_size")[0];
 
 const updateCubeSize = e => {
   const value = e?.target?.value;
   cube.style.setProperty(`--size`, toPx(value));
 };
 
-cube_size.addEventListener("input", updateCubeSize);
+$(".axis_control").forEach(input =>
+  input.addEventListener("input", updateAxis(input.name))
+);
+
+$("#cube_size")[0].addEventListener("input", updateCubeSize);
+
+$(`input[name="backface"]`).forEach(_ =>
+  _.addEventListener("change", e => {
+    const value = e?.target?.value;
+    cube.style.setProperty(`--backface-status`, value);
+  })
+);

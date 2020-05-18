@@ -1,0 +1,120 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  margin: 1px 0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+  background: #4d4d4d;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid #537d00;
+  height: 27px;
+  width: 25px;
+  border-radius: 0px;
+  background: #c87ce6;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1px;
+}
+
+input[type="range"].axis_control::-webkit-slider-thumb {
+  background: #c87ce6;
+}
+
+input[type="range"]#cube_size::-webkit-slider-thumb {
+  background: #467ce6;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #5a5a5a;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+  background: #4d4d4d;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid #537d00;
+  height: 27px;
+  width: 25px;
+  border-radius: 0px;
+  background: #c87ce6;
+  cursor: pointer;
+}
+
+input[type="range"].axis_control::-moz-range-thumb {
+  background: #c87ce6;
+}
+
+input[type="range"]#cube_size::-moz-range-thumb {
+  background: #467ce6;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #404040;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #4d4d4d;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 0px 0px 0px #670000, 0px 0px 0px #810000;
+  border: 0px solid #537d00;
+  height: 27px;
+  width: 25px;
+  border-radius: 0px;
+  cursor: pointer;
+  height: 25px;
+}
+
+input[type="range"].axis_control::-ms-thumb {
+  background: #c87ce6;
+}
+
+input[type="range"]#cube_size::-ms-thumb {
+  background: #467ce6;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #4d4d4d;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #5a5a5a;
+}

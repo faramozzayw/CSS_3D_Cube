@@ -26,6 +26,7 @@
         X axis
         <input
           type="range"
+          class="axis_control"
           id="axis_x"
           name="axis_x"
           min="0"
@@ -38,6 +39,7 @@
         Y axis
         <input
           type="range"
+          class="axis_control"
           id="axis_y"
           name="axis_y"
           min="0"
@@ -50,6 +52,7 @@
         Z axis
         <input
           type="range"
+          class="axis_control"
           id="axis_z"
           name="axis_z"
           min="0"
@@ -57,6 +60,7 @@
           value="0"
         />
       </label>
+    
 
       <label>
         Cube size
@@ -69,6 +73,21 @@
           value="150"
         />
       </label>
+      
+      <div>
+        Backface status:
+        <input 
+          type="radio" 
+          name="backface" 
+          value="visible"
+        >On</input>
+        <input 
+          type="radio" 
+          name="backface" 
+          value="hidden"
+          checked
+        >Off</input>
+      </div>
     </form>
 
     <script src="src/index.js"></script>
