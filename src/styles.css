@@ -62,6 +62,10 @@ form {
   justify-content: center;
   align-items: center;
   opacity: 0.9;
+
+  border: 1px dashed black;
+  outline: 1px double black;
+  outline-offset: -3rem;
 }
 
 .cube .face.front {
