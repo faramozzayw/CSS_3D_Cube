@@ -20,6 +20,16 @@ const updateAxis = target => e => {
 const updateCubeSize = e => {
   const value = e?.target?.value;
   cube.style.setProperty(`--size`, toPx(value));
+
+  const faces = $(".cube .face");
+
+  if (value <= 0) {
+    faces.forEach(face => face.style.setProperty(`border`, "none"));
+  } else {
+    faces.forEach(face =>
+      face.style.setProperty(`border`, "var(--default-border)")
+    );
+  }
 };
 
 $(".axis_control").forEach(input =>

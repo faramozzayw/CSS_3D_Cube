@@ -43,6 +43,8 @@ form {
 
   --backface-status: hidden;
 
+  --default-border: 1px dashed black;
+
   width: var(--size);
   height: var(--size);
   position: relative;
@@ -63,9 +65,9 @@ form {
   align-items: center;
   opacity: 0.9;
 
-  border: 1px dashed black;
-  outline: 1px double black;
-  outline-offset: -3rem;
+  border: var(--default-border);
+  outline: var(--default-border);
+  outline-offset: -5px;
 }
 
 .cube .face.front {
